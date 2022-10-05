@@ -33,6 +33,7 @@ body {
 .days_li {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .days_li li {
@@ -50,7 +51,10 @@ body {
 .days_li span {
     color: rgba(0, 0, 0, 0.431);
 }
+.days:hover{
 
+
+}
 .total {
     border-top: 2px solid rgba(214, 169, 169, 0.392);
     display: flex;
