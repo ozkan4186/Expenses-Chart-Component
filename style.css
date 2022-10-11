@@ -1,4 +1,4 @@
-* {
+Skip to content Search or jump to… Pull requests Issues Marketplace Explore @ozkan4186 KerimGurbaz / expenses-chart-component-main Public Code Issues Pull requests Actions Projects Security Insights expenses-chart-component-main/style.css @KerimGurbaz KerimGurbaz updated Latest commit eb73177 6 days ago History 1 contributor 126 lines (111 sloc) 1.77 KB * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,14 +32,29 @@ body {
 
 .days_li {
     display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding-right: 1.5rem;
 }
 
 .days_li li {
     list-style-type: none;
     margin-top: 12rem;
     padding: 1rem;
+}
+
+.days_li li div:hover {
+    opacity: 0.5;
+}
+
+.days_li li div {
+    width: 1.2rem;
+    justify-items: center;
+}
+
+.days_li li span {
+    width: 100%;
 }
 
 .bottom {
@@ -51,10 +66,11 @@ body {
 .days_li span {
     color: rgba(0, 0, 0, 0.431);
 }
-.days:hover{
 
-
+#wed {
+    background-color: hsl(186, 34%, 60%) !important;
 }
+
 .total {
     border-top: 2px solid rgba(214, 169, 169, 0.392);
     display: flex;
@@ -95,3 +111,28 @@ body {
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 20rem;
+        margin: 2rem auto;
+    }
+
+    .days_li li {
+        padding: 0.5rem;
+    }
+
+    .total {
+        padding: 0.1rem 0;
+    }
+
+    .total span {
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
